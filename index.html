@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-brand">Portfolio</div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="background-wrapper">
+      <div class="background-overlay"></div>
+      <div class="animated-gradient"></div>
+      <section id="home" class="hero">
+        <div class="grid-background"></div>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="title">Djouab Abdellah</h1>
+            <h2 class="subtitle">
+              Développeur <span class="highlight">Full Stack</span>
+            </h2>
+            <p class="hero-description">
+              Passionné par le développement web et mobile, je crée des
+              applications modernes et performantes.
+            </p>
+            <div class="cta-buttons">
+              <a href="assets/cv.pdf" download class="cta-primary">
+                <i class="fas fa-download"></i> Télécharger CV
+              </a>
+              <a href="#contact" class="cta-secondary">
+                <i class="fas fa-envelope"></i> Me Contacter
+              </a>
+            </div>
+          </div>
+          <div class="hero-features">
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <span>Développement Web</span>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <span>Applications Mobiles</span>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <span>Base de Données</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
+        <div class="container">
+          <h2 class="section-title">
+            <i class="fas fa-tools"></i> Compétences Techniques
+          </h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3><i class="fas fa-code"></i> Développement Frontend</h3>
+              <div class="tech-grid">
+                <div class="tech-item">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+                  <div class="skill-level">
+                    <div class="skill-bar" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-js"></i>
+                  <span>JavaScript</span>
+                  <div class="skill-level">
+                    <div class="skill-bar" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML5/CSS3</span>
+                  <div class="skill-level">
+                    <div class="skill-bar" style="width: 95%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3><i class="fas fa-server"></i> Développement Backend</h3>
+              <div class="tech-grid">
+                <div class="tech-item">
+                  <i class="fab fa-node-js"></i>
+                  <span>Node.js</span>
+                  <div class="skill-level">
+                    <div class="skill-bar" style="width: 88%"></div>
+                  </div>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-python"></i>
+                  <span>Python</span>
+                  <div class="skill-level">
+                    <div class="skill-bar" style="width: 82%"></div>
+                  </div>
+                </div>
+                <div class="tech-item">
+                  <i class="fas fa-database"></i>
+                  <span>SQL/NoSQL</span>
+                  <div class="skill-level">
+                    <div class="skill-bar" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3><i class="fas fa-tools"></i> Outils & DevOps</h3>
+              <div class="tech-grid">
+                <div class="tech-item">
+                  <i class="fab fa-git-alt"></i>
+                  <span>Git/GitHub</span>
+                  <div class="skill-level">
+                    <div class="skill-bar" style="width: 92%"></div>
+                  </div>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-docker"></i>
+                  <span>Docker</span>
+                  <div class="skill-level">
+                    <div class="skill-bar" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="tech-item">
+                  <i class="fas fa-cloud"></i>
+                  <span>Cloud (AWS)</span>
+                  <div class="skill-level">
+                    <div class="skill-bar" style="width: 78%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">
+            <i class="fas fa-user-circle"></i> À Propos de Moi
+          </h2>
+          <div class="about-content">
+            <div class="profile-image">
+              <img src="./images/PRO.png" alt="Djouab Abdellah" />
+              <div class="profile-overlay"></div>
+            </div>
+            <div class="about-text">
+              <p>
+                <i class="fas fa-quote-left quote-icon"></i>
+                Développeur Full Stack passionné avec plus de 3 ans d'expérience
+                dans la création d'applications web et mobiles. Spécialisé dans
+                les technologies modernes comme React, Node.js et Python, je
+                m'efforce de créer des solutions innovantes et performantes pour
+                répondre aux besoins des utilisateurs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">
+            <i class="fas fa-code-branch"></i> Mes Projets
+          </h2>
+          <div class="project-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./images/4.jpg" alt="Application de Gestion" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/votre-compte/projet1"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i> Code Source
+                    </a>
+                    <a
+                      href="https://demo-projet1.com"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-external-link-alt"></i> Démo Live
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>
+                  <i class="fas fa-tasks"></i> Application de Gestion de Projets
+                </h3>
+                <p>
+                  Application web complète permettant la gestion de projets, le
+                  suivi des tâches et la collaboration en équipe.
+                </p>
+                <div class="tech-stack">
+                  <span><i class="fab fa-react"></i> React</span>
+                  <span><i class="fab fa-node-js"></i> Node.js</span>
+                  <span><i class="fas fa-database"></i> MongoDB</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./images/2.jpg" alt="Application Mobile" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/votre-compte/projet2"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i> Code Source
+                    </a>
+                    <a
+                      href="https://demo-projet2.com"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-external-link-alt"></i> Démo Live
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>
+                  <i class="fas fa-mobile-alt"></i> Application Mobile Fitness
+                </h3>
+                <p>
+                  Application mobile de suivi d'entraînement et de nutrition
+                  avec synchronisation cloud et analyses personnalisées.
+                </p>
+                <div class="tech-stack">
+                  <span><i class="fab fa-react"></i> React Native</span>
+                  <span><i class="fab fa-python"></i> Python</span>
+                  <span><i class="fas fa-server"></i> FastAPI</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./images/5.jpg" alt="API REST" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/votre-compte/projet3"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i> Code Source
+                    </a>
+                    <a
+                      href="https://api-docs.projet3.com"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-book"></i> Documentation
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3><i class="fas fa-server"></i> API REST E-commerce</h3>
+                <p>
+                  API REST complète pour une plateforme e-commerce avec gestion
+                  des produits, commandes et paiements.
+                </p>
+                <div class="tech-stack">
+                  <span><i class="fab fa-node-js"></i> Express.js</span>
+                  <span><i class="fas fa-database"></i> PostgreSQL</span>
+                  <span><i class="fas fa-lock"></i> JWT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">
+            <i class="fas fa-paper-plane"></i> Get in Touch
+          </h2>
+          <div class="contact-content">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <i class="fas fa-user form-icon"></i>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Votre Nom"
+                />
+              </div>
+              <div class="form-group">
+                <i class="fas fa-envelope form-icon"></i>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Votre Email"
+                />
+              </div>
+              <div class="form-group full-width">
+                <i class="fas fa-comment form-icon"></i>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Votre Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Envoyer le Message
+              </button>
+            </form>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>À Propos</h3>
+            <p>
+              Développeur Full Stack passionné par la création d'applications
+              web modernes et performantes. Je m'engage à fournir des solutions
+              innovantes et de haute qualité.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#home"><i class="fas fa-home"></i> Accueil</a>
+              </li>
+              <li>
+                <a href="#skills"><i class="fas fa-tools"></i> Compétences</a>
+              </li>
+              <li>
+                <a href="#projects"
+                  ><i class="fas fa-code-branch"></i> Projets</a
+                >
+              </li>
+              <li>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Direct</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:contact@example.com"
+                  ><i class="fas fa-envelope"></i> contact@example.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+33600000000"
+                  ><i class="fas fa-phone"></i> +33 6 00 00 00 00</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-map-marker-alt"></i> Paris, France</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Djouab Abdellah. Tous droits réservés.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
